@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <memory>
 
 bool serch(std::vector<int>& vector, int numb) {
     for (int i{}; i < vector.size(); ++i) {
@@ -46,10 +45,9 @@ int main() {
                 dfs(matrix, i, size, result);
                }
             }
-            //std::cout << "\n";
         }
         for (auto i: result) {
-            std::cout << i +1<< " ";
+            std::cout << i + 1 << " ";
         }
         for (int i{}; i < size; ++i) {
             delete[] matrix[i];
