@@ -38,7 +38,7 @@ int main() {
                 f_in >> matrix[i][j];
             }
         }
-        std::vector<int> result {0};
+        std::vector<int> result;
         for (int i{}; i < size; ++i) {
             for (int j{}; j < size; ++j) {
                if (matrix[i][j] != 0) {
